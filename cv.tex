@@ -1,10 +1,9 @@
-\documentclass[11pt,a4paper,roman]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,a4paper,roman]{moderncv}
 
-% modern themes
-\moderncvstyle{classic}                            % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvstyle{classic}
 
 
-\moderncvcolor{blue}      
+\moderncvcolor{blue}
 
 \nopagenumbers{}
 
@@ -14,7 +13,6 @@
 \usepackage{tabularx}
 \usepackage{ragged2e}
 
-% adjust the page margins
 \usepackage[scale=0.8]{geometry}
  \geometry{
  a4paper,
@@ -28,24 +26,18 @@
 
 \usepackage{import}
 
-% personal data
 \name{Andrey}{Zvonov}
-% \title{Curriculum Vitae}                               % optional, remove / comment the line if not wanted
-% optional, remove / comment the line if not wanted; the "postcode city" and and 
 
 
-%\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
-
-  
 \newcommand*{\customcventry}[7][.30em]{
-  \begin{tabular}{@{}l} 
+  \begin{tabular}{@{}l}
     {\bfseries #4}
   \end{tabular}
   \hfill% move it to the right
   \begin{tabular}{l@{}}
      {\bfseries #5}
   \end{tabular} \\
-  \begin{tabular}{@{}l} 
+  \begin{tabular}{@{}l}
     {\itshape #3}
   \end{tabular}
   \hfill% move it to the right
@@ -59,53 +51,17 @@
     \end{minipage}}\fi%
   \par\addvspace{#1}}
 
-\newcommand*{\customcvproject}[4][.25em]{
-%   \vfill\noindent
-  \begin{tabular}{@{}l} 
-    {\bfseries #2}
-  \end{tabular}
-  \hfill% move it to the right
-  \begin{tabular}{l@{}}
-     {\itshape #3}
-  \end{tabular}
-  \ifx&#4
-  \else{\\%
-    \begin{minipage}{\maincolumnwidth}%
-      \small#4%
-    \end{minipage}}\fi%
-  \par\addvspace{#1}}
-
-\newcommand*{\cvref}[3][.25em]{
-%   \vfill\noindent
-  \begin{tabular}{@{}l} 
-    {\bfseries #2}
-  \end{tabular}
-  \ifx&#3
-  \else{\\%
-    \begin{minipage}{\maincolumnwidth}%
-      \small#3%
-    \end{minipage}}\fi%
-  \par\addvspace{#1}}
-  
 
 \setlength{\tabcolsep}{10pt}
 
-%----------------------------------------------------------------------------------
-%            content
-%----------------------------------------------------------------------------------
 \begin{document}
-%\begin{CJK*}{UTF8}{gbsn}                          % to typeset your resume in Chinese using CJK
-%-----       resume       ---------------------------------------------------------
 \makecvtitle
 \vspace*{-12mm}
 
 
-
-
 \begin{center}
-\begin{tabular}{ c c c c }
- \faEnvelopeO\enspace zvonov.andrey@gmail.com & \faGithub\enspace github.com/zvonand
- \\\faMobile\enspace +7 (916) 396-02-50 & \faLinkedin\enspace linkedin.com/zvonand
+\begin{tabular}{ c c c }
+ \faEnvelopeO\enspace zvonov.andrey@gmail.com & \faMobile\enspace +7 (916) 396-02-50 & \faLinkedin\enspace linkedin.com/zvonand
 \end{tabular}
 \end{center}
 
@@ -115,10 +71,9 @@
 
 \section{About Me}{
  {\begin{itemize}
-    \item Currently, I am pursuing my Bachelor's degree at Lomonosov Moscow State University, Faculty of Computational Mathematics and Cybernetics.
-    \item I was an intern software engineer in ARCCN, where participated in developing core applications for a SDN controller.
-    \item Currently a QA Engineer at Altinity, Inc.
-    \item Teaching Assistant at Computer Networks course at Moscow Institute of Physics and Technology
+    \item Pursuing Bachelor's degree at Lomonosov Moscow State University, Faculty of Computational Mathematics and Cybernetics.
+    \item Teaching Assistant at Computer Networks course in Moscow Institute of Physics and Technology.
+    \item QA Engineer at Altinity, Inc.
 
   \end{itemize}
 }
@@ -130,18 +85,11 @@
 
 {\begin{itemize}
     \item Cumulative GPA -- \textbf{4.45/5}
+    \item "Excellent" in Algorithms, Computer Networks, Assembly Language \& Computer Architecture, Operating Systems, Distributed Systems, Computations Scheduling in Distributed Systems.
   \end{itemize}}
 }
 
-\section{Professional Experience}
-
-\customcventry{Remote}{Software Engineer in QA}{Altinity, Inc.}{Sep 2020 -- Present}{}{Created automated tests for several new features in ClickHouse DBMS, as well as utilites, such as CLickHouse Backup. Contributed to writing ClickHouse docs. Wrote automated tests for our own cloud platform, Altinity.Cloud}
-
-\customcventry{Moscow, Russia}{Intern Software Engineer}{Applied Research Center for Computer Networks}{Nov 2019 -- Aug 2020}{}{Participated in development of RUNOS SDN controller. Worked in a team developing a Capacity-on-Demand application over NETCONF.}
-
-
-  
-\section{MOOC}
+\section{Online Courses}
 \begin{multicols}{2}
 \begin{itemize}
     \item Introduction to HTML5, Introduction to CSS3, Interactivity with JavaScript (Coursera)
@@ -151,84 +99,45 @@
     \item An Introduction to Interactive Programming in Python (Coursera)
     \item Developing Android Apps (Udacity)
   \end{itemize}
- 
 \end{multicols}
 
-  
-\section{Technical Skills}
-{\begin{itemize}
-    \item General skills: \textbf{Git, Linux, LaTeX, Docker}
-    \item Programming Languages: \textbf{Python} [good] ,\textbf{C, C++, Java, Kotlin, JavaScript} [Basic]
-    \item \textbf{Octave/Matlab} [basic]
-    \item SQL (ClickHouse, PostgreSQL)
-  \end{itemize}
+
+\section{Research}
+  {\begin{itemize}
+   \item \textbf{On routing of demultiplexed connections with considering current network state.}\\
+   (3rd year coursework). An algorithm finding a set of routes corresponding to a given request was proposed and its test was performed using network topologies from TopologyZoo.
+
+   \item \textbf{On efficiency analysis of multipath routing algorithms.}\\
+   (Bachelor's thesis, in progress). The goal of the thesis is to analyse efficiency of a number of algorithms finding a set of routes in a given topology applied to particular tasks.
+ \end{itemize}
 }
-\section{Knowledge Areas}
-{\begin{itemize}
-    \item Data structures and Algorithms
-    \item Computer networks, Databases, Operating systems
-    \item Calculus, Algebra, Graphs, Discrete mathematics
-  \end{itemize}}
+
+
+\section{Extra activities}
+   	\begin{itemize}
+         \item Was elected as a class/group president at school and at the University.
+         \item Guided freshman students for three years in a row, making them more familiar and comfortable with the University.
+	\end{itemize}
+
+
+\section{Professional Experience}
+
+\customcventry{Remote}{Software Engineer in QA}{Altinity, Inc.}{Sep 2020 -- Present}{}{Created automated tests for several new features in \textbf{ClickHouse} DBMS, as well as utilites, such as \textit{ClickHouse Backup}. Contributed to writing ClickHouse docs. Wrote automated tests for our own cloud platform, \textit{Altinity.Cloud}}
+
+\customcventry{Moscow, Russia}{Intern Software Engineer}{Applied Research Center for Computer Networks}{Nov 2019 -- Aug 2020}{}{Participated in development of \textit{RUNOS} SDN controller.}
+
 
 \section{Languages}
 {\begin{multicols}{3}
-\textbf{Russian} [native]
+\textbf{Russian} -- \textit{native}
 
-\textbf{English} [fluent]
+\textbf{English} -- \textit{fluent}
 
-\textbf{German} [basic]
+\textbf{German} -- \textit{basic}
 
 
 \end{multicols}
 }
-% {\begin{itemize}
-%     \item {\textbf{Russian} [native]}
-%     \item {\textbf{English} [fluent]}
-%     \item {\textbf{German} [basic]}
 
-%   \end{itemize}}
-
-
-%\begin{flushleft}
-%\textit{Systems Engineer}\hspace{315.0pt}\textbf{Bangalore, India}
-%\begin{itemize}
-%    \item Developed a comprehensive shell script that remotely monitored\hspace{45.0pt}\textit{March 2012 – July 2015}\\ the health of all the production services. The script visualized the current state of the different production services in a dashboard. The transparent report dashboard decreased production outage to one two incidents in a financial quarter.
-%    \item Encapsulated the build scripts in a Jenkins automation server. The user-friendly Jenkins GUI empowered the developers to trigger new builds themselves. The DevOps effort saved was 2 man-days every week.
-%\end{itemize}
-%\end{flushleft}
-
-
-%\begin{minipage}{\maincolumnwidth}%
-%	\small{
-%    	\begin{itemize}
-%          \item Winner, Tata Innovista, November 2016
-%          \item President of XYZ Club, Public Relations Manager of Swarthmore QWE Club
-%          \item Programming Languages: Python, C, C++, PHP, Java, HTML/CSS, Javascript, jQuery, NodeJS
-%          \item Fluent in Gibberish, conversational in Nonsense
-%		\end{itemize}}
-%\end{minipage}%
-      
-
-% Publications from a BibTeX file without multibib
-%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
-%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
-\nocite{*}
-\bibliographystyle{plain}
-\bibliography{publications}                        % 'publications' is the name of a BibTeX file
-
-% Publications from a BibTeX file using the multibib package
-%\section{Publications}
-%\nocitebook{book1,book2}
-%\bibliographystylebook{plain}
-%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
-%\nocitemisc{misc1,misc2,misc3}
-%\bibliographystylemisc{plain}
-%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
-
-%-----       letter       ---------------------------------------------------------
 
 \end{document}
-
-
-%% end of file `template.tex'.
-
